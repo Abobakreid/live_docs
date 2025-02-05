@@ -30,8 +30,11 @@ import {
 
 import FloatingToolbarPlugin from "./FloatingToolbarPlugin";
 
-import ExampleTheme from "./ExampleTheme";
-import { parseAllowedColor, parseAllowedFontSize } from "./styleConfig";
+import ExampleTheme from "../constants/ExampleTheme";
+import {
+  parseAllowedColor,
+  parseAllowedFontSize,
+} from "../constants/styleConfig";
 import { Threads } from "./Threads";
 import { useThreads } from "@liveblocks/react/suspense";
 import DeleteRoom from "./DeleteRoom";
