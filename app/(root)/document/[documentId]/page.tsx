@@ -27,7 +27,7 @@ const Document = async ({
   const emails = Object.keys(room.usersAccesses);
   const newEmails = emails.map((email) => email.trim());
   const clerksUsers = await getClerkUsers({ userIds: newEmails });
-  console.log(clerksUsers, "clerksUsers");
+  // console.log(clerksUsers, "clerksUsers");
   const usersData = clerksUsers?.map((user: User) => {
     const collaboratorId = uuidv4();
     return {
@@ -37,7 +37,7 @@ const Document = async ({
     };
   });
 
-  console.log(newEmails, "users lovop");
+  // console.log(newEmails, "users lovop");
 
   const currentType = room.usersAccesses[
     user.emailAddresses[0].emailAddress
@@ -45,7 +45,7 @@ const Document = async ({
     ? "editor"
     : "viewer";
 
-  console.log(usersData, "session");
+  // console.log(usersData, "session");
   return (
     <Room roomId={documentId}>
       <Header

@@ -118,7 +118,7 @@ export const removeCollaborator = async ({
 
     const roomre = await liveblocks.getRoom(roomId);
 
-    console.log(roomre, "Updated re");
+    // console.log(roomre, "Updated re");
 
     revalidatePath(`/documents/${roomId}`);
     return parseStringify(updatedRoom);
@@ -143,7 +143,7 @@ export const updateDocumentAccess = async ({
       usersAccesses,
     });
 
-    console.log(room, "Updated add");
+    // console.log(room, "Updated add");
 
     if (room) {
       const roomId = uuidv4();

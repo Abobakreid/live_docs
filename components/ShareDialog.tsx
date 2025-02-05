@@ -42,7 +42,7 @@ const ShareDialog = ({
     setLoading(false);
   };
 
-  console.log(collaborators, "collaborators");
+  // console.log(collaborators, "collaborators");
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
